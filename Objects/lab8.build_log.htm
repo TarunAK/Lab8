@@ -1,0 +1,81 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.26.2.0
+Copyright (C) 2018 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Tarun Kalikivaya, Carleton University, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.26.2.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 6 (build 750)
+Assembler:       Armasm.exe V5.06 update 6 (build 750)
+Linker/Locator:  ArmLink.exe V5.06 update 6 (build 750)
+Library Manager: ArmAr.exe V5.06 update 6 (build 750)
+Hex Converter:   FromElf.exe V5.06 update 6 (build 750)
+CPU DLL:         SARMCM3.DLL V5.26.2.0
+Dialog DLL:      DCM.DLL V1.17.2.0
+Target DLL:      CMSIS_AGDI.dll V1.30.6.0
+Dialog DLL:      TCM.DLL V1.36.1.0
+ 
+<h2>Project:</h2>
+C:\Users\tarun\Documents\university\SYSC3310\Lab8\lab8.uvprojx
+Project File Date:  03/24/2019
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
+Rebuild target 'Target 1'
+assembling startup_msp432p401r_uvision.s...
+compiling CortexM.c...
+compiling system_msp432p401r.c...
+compiling main.c...
+compiling fate.c...
+compiling BSP.c...
+msp432p401r.h(16180): warning:  #47-D: incompatible redefinition of macro "RSTCTL_PSSRESET_STAT_SVSL"  (declared at line 313 of "C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include\msp_compatibility.h")
+  #define RSTCTL_PSSRESET_STAT_SVSL                          (0x00000001)          /* Indicates if POR was caused by an SVSL trip condition in the PSS */
+msp432p401r.h(17341): warning:  #47-D: incompatible redefinition of macro "SYSCTL_SYSTEM_STAT_DBG_SEC_ACT"  (declared at line 317 of "C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include\msp_compatibility.h")
+  #define SYSCTL_SYSTEM_STAT_DBG_SEC_ACT                     (0x00000008)          /* Debug Security active */
+msp432p401r.h(17344): warning:  #47-D: incompatible redefinition of macro "SYSCTL_SYSTEM_STAT_JTAG_SWD_LOCK_ACT"  (declared at line 320 of "C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include\msp_compatibility.h")
+  #define SYSCTL_SYSTEM_STAT_JTAG_SWD_LOCK_ACT               (0x00000010)          /* Indicates if JTAG and SWD Lock is active */
+msp432p401r.h(17347): warning:  #47-D: incompatible redefinition of macro "SYSCTL_SYSTEM_STAT_IP_PROT_ACT"  (declared at line 323 of "C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include\msp_compatibility.h")
+  #define SYSCTL_SYSTEM_STAT_IP_PROT_ACT                     (0x00000020)          /* Indicates if IP protection is active */
+BSP.c: 4 warnings, 0 errors
+linking...
+Program Size: Code=2200 RO-data=356 RW-data=116 ZI-data=772  
+".\Objects\lab8.axf" - 0 Error(s), 4 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.4.0.pack
+                ARM.CMSIS.5.4.0
+                CMSIS (Cortex Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.1.2
+
+Package Vendor: TexasInstruments
+                http://software-dl.ti.com/msp430/msp430_public_sw/mcu/msp430/msp432cmsis/latest/exports/TexasInstruments.MSP432P4xx_DFP.3.2.6.pack
+                TexasInstruments.MSP432P4xx_DFP.3.2.6
+                Device Family Pack for Texas Instruments SimpleLink(TM) MSP432 Series
+   * Component: Startup Version: 3.2.2
+
+<h2>Collection of Component include folders:</h2>
+  .\RTE\_Target_1
+  C:\Keil_v5\ARM\PACK\ARM\CMSIS\5.4.0\CMSIS\Core\Include
+  C:\Keil_v5\ARM\PACK\TexasInstruments\MSP432P4xx_DFP\3.2.6\Device\Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE:5.1.2
+
+   * Component: TexasInstruments::Device:Startup:3.2.2
+      Source file:   Examples\EmptyMain\main.c
+      Source file:   Examples\BlinkLED\blinkLED.c
+      Source file:   Device\Source\startup_msp432p401r_uvision.s
+      Include file:  Device\Include\msp_compatibility.h
+      Source file:   Device\Source\system_msp432p401r.c
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
